@@ -10,12 +10,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>ChatCord App</title>
+    <title>TrueChat App</title>
   </head>
   <body>
     <div class="chat-container">
       <header class="chat-header">
-        <h1>TrueChat</h1>
+        <h1>TrueSignal Chat</h1>
         <a id="leave-btn" class="btn">Leave Room</a>
       </header>
       <main class="chat-main">
@@ -40,10 +40,13 @@
         </form>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@3.1.1/dist/socket.io.min.js" integrity="sha384-gDaozqUvc4HTgo8iZjwth73C6dDDeOJsAgpxBcMpZYztUfjHXpzrpdrHRdVp8ySO" crossorigin="anonymous"></script>
-    <script>
-      var socket = io();
-    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
