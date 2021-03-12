@@ -27,7 +27,6 @@ body {
 .chat-container {
   display: flex;
   background-color: #ededed;
-  margin-top: -50px;
   height: 100vh;
   width: 100vw;
   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
@@ -43,7 +42,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 27.5px;
-  margin-top: 20px;
   border-right: 1px solid lightgray;
 }
 
@@ -51,6 +49,10 @@ body {
   flex: 1;
   background-color: white;
   overflow: scroll;
+}
+
+.sidebar-messages {
+  padding: 30px 20px 0px 20px;
 }
 
 .sidebar-main-room {
@@ -99,7 +101,6 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
-  margin-top: 20px;
   border-bottom: 1px solid lightgray
 }
 
@@ -177,6 +178,32 @@ body {
     border: 2px solid darkslategray;
     border-radius: 10%;
     cursor: pointer;
+}
+
+.room-list {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+select {
+	font-size: 16px;
+	padding: 5px;
+	height: 30px;
+	width: 50%;
+  margin-left: 10px;
+}
+
+.room-list > form > button {
+  margin: 5px;
+  border: 2px solid darkslategray;
+  height: 30px;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
